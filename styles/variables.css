@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-col:#fff;
+  --button-col:#fff;
+  --size-lebl: 14px;
+  --text-weight: 400;
+  --title-weight: 700;
+  --accent-col:#000;
+  --head-fonsize: clamp(3.063rem, 2.71rem +1.502vw, 4.063rem);
+  --bg-image:
+    repeating-linear-gradient(90deg,#d3d3d3 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(180deg,#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --font-main: 'Intel';
+  --font-head: 'PressStart2P';
+  --sparks-color: #ff0000;
+}

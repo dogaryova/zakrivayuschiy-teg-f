@@ -443,6 +443,15 @@ button:hover::after {
   scale: 0;
 }
 
+@supports (text-stroke: 1px var(--bg-col)) or
+(-webkit-text-stroke: 1px var(--bg-col)) {
+  .card__label {
+    text-stroke: 1px var(--bg-col);
+    -webkit-text-stroke: 1px var(--bg-col);
+    text-shadow: none;
+  }
+}
+
 @media (width <= 375px) {
   .header {
     width: 100vw;

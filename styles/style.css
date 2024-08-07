@@ -145,8 +145,6 @@
   font-size: 14px;
   line-height: 14px;
   color: var(--accent-col);
-  mix-blend-mode: hard-light;
-  opacity: 0.5;
 }
 
 .card__top {
@@ -193,7 +191,7 @@
 .text_paragraph {
   padding-top: 27px;
   padding-left: 23px;
-  padding-bottom: 3px; 
+  padding-bottom: 3px;
   padding-right: 23px;
 }
 
@@ -212,7 +210,6 @@
 .button__text:hover {
   mix-blend-mode: difference;
   position: relative;
-  mix-blend-mode: difference;
   color: var(--bg-col);
 }
 
@@ -293,7 +290,6 @@ button:hover::after {
   padding-top: 50px;
   margin:0 auto;
   display: block;
-  display: flex;
   align-items: center;
   width: 335px;
   height: 55px;
@@ -349,11 +345,6 @@ button:hover::after {
 
 .card__icon-button:focus {
   outline: none;
-}
-
-.like-icon {
-  cursor: pointer;
-  transform-origin: center;
 }
 
 .popup {
@@ -494,7 +485,7 @@ button:hover::after {
     width: 257px;
   }
 
-  .card__top {  
+  .card__top {
     margin: 4px 10px 6px;
     padding: 0;
   }

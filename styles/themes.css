@@ -44,7 +44,7 @@
       linear-gradient(180deg,#007f0c 0%,#007f0c 0.01%,#004306 100%);
     --size-lebl: 14px;
     --text-weight: 400;
-    : 700;
+    --title-weight: 700;
     --bg-col:#000;
     --button-col:#00CC14;
     --accent-col:#00CC14;

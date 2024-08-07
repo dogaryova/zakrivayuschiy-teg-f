@@ -26,7 +26,7 @@
   background-attachment: fixed;
   color: var(--accent-col);
   background-color: var(--bg-col);
-  font-variation-settings:var(--text-weight);
+  font-variation-settings:var(--title-weight);
 }
 
 .header {

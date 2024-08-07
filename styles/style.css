@@ -451,6 +451,15 @@ button:hover::after {
     text-shadow: none;
   }
 }
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter-VF';
+  }
+}
+
+body {
+  font-family: 'Inter';
+}
 
 @media (width <= 375px) {
   .header {

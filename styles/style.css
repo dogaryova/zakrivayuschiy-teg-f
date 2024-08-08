@@ -347,7 +347,6 @@
 
 .popup {
   width: 357px;
-  height: 193px;
   border: 2px solid var(--accent-col);
   padding: 30px;
   color: var(--accent-col);
@@ -467,9 +466,8 @@ form {
       width: 100vw;
       padding-block-start: 120px;
   }
-
   .subtitle {
-      height: 14px;
+      max-width: 210px;
   }
 
   .button_save {
@@ -518,5 +516,4 @@ form {
       min-width: 28px;
       height: 28px;
   }
-
 }

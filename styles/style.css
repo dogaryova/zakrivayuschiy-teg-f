@@ -26,7 +26,7 @@
   background-attachment: fixed;
   color: var(--accent-col);
   background-color: var(--bg-col);
-  font-variation-settings:var(--title-weight);
+  font-variation-settings: var(--title-weight);
 }
 
 .header {
@@ -42,7 +42,7 @@
   text-decoration: none;
   text-align: center;
   width: 700px;
-  font-family: var(--font-head);
+  font-family: var(--font-head), "Arial", sans-serif;
   font-weight: var(--text-weight);
   font-size: 65px;
   line-height: 65px;
@@ -64,17 +64,16 @@
 .heading {
   font-weight: 700;
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
-  font-family: var(--font-head);
+  font-family: var(--font-head), "Arial", sans-serif;
   text-decoration: none;
 }
 
 .subtitle {
-  font-family: var(--font-head);
+  font-family: var(--font-head), "Arial", sans-serif;
   font-weight: var(--text-weight);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 23px;
-  width: 345px;
-  height: 23px;
+  max-width: 345px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,11 +87,11 @@
   background-color: transparent;
   border: none;
   transition: opacity 0.3s ease;
-  font-family: var(--font-head);
+  font-family: var(--font-head), "Arial", sans-serif;
 }
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   animation: cursor 0.5s infinite ease-in-out alternate;
   animation-name: cursor;
@@ -108,7 +107,7 @@
 .theme-menu__item {
   padding-left: 21px;
   position: relative;
-  font-family: 'PressStart2P';
+  font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -139,21 +138,21 @@
   top: 31px;
   right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   text-shadow: 0 0 5px var(--bg-col);
-  font-family: 'PressStart2P';
+  font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--text-weight);
   font-size: 14px;
   line-height: 14px;
   color: var(--accent-col);
 }
 
 .card__top {
-  font-family: 'Inter';
+  font-family: "Inter", "sans-serif";
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--title-weight);
   font-size: 18px;
   line-height: 22px;
-  color:inherit;
+  color: inherit;
   padding-left: 9px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -175,13 +174,12 @@
   background-color: var(--bg-col);
   border-top: 2px solid var(--accent-col);
   border-bottom: 2px solid var(--accent-col);
- 
 }
 
 .card__text {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--text-weight);
   font-size: 18px;
   line-height: 21px;
   color: inherit;
@@ -199,9 +197,9 @@
   position: relative;
   width: 56px;
   height: 13px;
-  font-family: 'PressStart2P';
+  font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--text-weight);
   font-size: 14px;
   line-height: 90%;
   color: var(--accent-col);
@@ -210,7 +208,7 @@
 .button__text:hover {
   mix-blend-mode: difference;
   position: relative;
-  color: var(--bg-col);
+  color: var(--button-col);
 }
 
 .card__bottom {
@@ -263,7 +261,7 @@
   display: block;
 }
 
-button:hover::after {
+.button:hover::after {
   transform: translateX(0);
   cursor: pointer;
 }
@@ -287,23 +285,23 @@ button:hover::after {
 }
 
 .footer {
-  padding-top: 50px;
-  margin:0 auto;
+  margin: 0 auto;
   display: block;
   align-items: center;
   width: 335px;
-  height: 55px;
+  min-height: 55px;
   color: var(--accent-col);
   text-transform: uppercase;
 }
 
 .floppy__text {
-  font-family: 'PressStart2P';
+  font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
+  max-width: 234px;
 }
 
 .blur {
@@ -315,7 +313,7 @@ button:hover::after {
 }
 
 .invert {
-  filter: invert(100%)
+  filter: invert(100%);
 }
 
 .brightness {
@@ -353,28 +351,31 @@ button:hover::after {
   border: 2px solid var(--accent-col);
   padding: 30px;
   color: var(--accent-col);
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), "Arial", sans-serif;
   font-size: 14px;
   background-color: var(--bg-col);
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .button_save {
   display: flex;
   align-items: center;
+  margin: 2px 0 100px;
+  padding: 15px 20px;
   gap: 8px;
-  width: 335px;
-  height: 55px;
+  padding-right: 39px;
   border: 2px solid var(--accent-col);
   background-color: var(--bg-col);
+  margin-bottom: 100px;
+  max-width: 338px;
 }
 
 .button_save svg {
   position: relative;
-  height: 28px;
-  width: 28px;
+  max-width: 21px;
   mix-blend-mode: difference;
   flex-shrink: 0;
   color: var(--floppy-color);
@@ -382,23 +383,24 @@ button:hover::after {
 
 .floppy {
   position: relative;
-  height: 28px;
-  width: 28px;
+  height: 39px;
+  max-width: 39px;
   mix-blend-mode: difference;
   flex-shrink: 0;
   color: var(--floppy-color);
+  flex: none;
 }
 
 .flex {
   display: flex;
-  gap: 12px;
   padding-bottom: 30px;
+  gap: 12px;
 }
 
 .button__text_floopy {
   width: 266px;
   height: 14px;
-  font-family: 'PressStart2P';
+  font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -430,6 +432,11 @@ button:hover::after {
   opacity: 0.6;
 }
 
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
 .theme-menu__button::after {
   content: "";
   position: absolute;
@@ -442,72 +449,74 @@ button:hover::after {
   inset-inline-start: 25px;
   scale: 0;
 }
+form {
+  display: block;
+  margin-top: 0em;
+}
 
-@supports (text-stroke: 1px var(--bg-col)) or
-(-webkit-text-stroke: 1px var(--bg-col)) {
+@supports (text-stroke: 1px var(--bg-col)) or (-webkit-text-stroke: 1px var(--bg-col)) {
   .card__label {
-    text-stroke: 1px var(--bg-col);
-    -webkit-text-stroke: 1px var(--bg-col);
-    text-shadow: none;
+      text-stroke: 1px var(--bg-col);
+      -webkit-text-stroke: 1px var(--bg-col);
+      text-shadow: none;
   }
-}
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: 'Inter-VF';
-  }
-}
-
-body {
-  font-family: 'Inter';
 }
 
 @media (width <= 375px) {
   .header {
-    width: 100vw;
-    padding-block-start: 120px;
+      width: 100vw;
+      padding-block-start: 120px;
   }
 
   .subtitle {
-    height: 14px;
+      height: 14px;
   }
 
   .button_save {
-    flex-direction: column;
-    width: 310px;
-    height: 84px;
-    margin-left: 13px;
-    padding-top: 14px;
+      flex-direction: column;
+      max-width: 310px;
+      height: 84px;
+      margin-left: 13px;
+      padding-top: 14px;
+      padding-left: 35px;
   }
 
   .card__label {
-    top: 24px;
+      top: 24px;
   }
 
   .text_paragraph {
-    padding-top: 20px;
-    padding-left: 23px;
-    padding-bottom: 6px;
-    padding-right: 27px;
+      padding-top: 20px;
+      padding-left: 23px;
+      padding-bottom: 6px;
+      padding-right: 27px;
   }
 
   .button_type_save svg {
-    height: 84px;
+      height: 84px;
   }
-
+  .button__ok {
+      max-width: 257px;
+  }
   .popup {
-    width: 100%;
-    padding: 30px 40px;
+      width: 100%;
+      padding: 30px 40px;
   }
 
   .floppy__text {
-    width: 257px;
+      width: 257px;
+  }
+  .floppy__icon {
+      min-width: 39px;
+      height: 39px;
+  }
+  .card__top {
+      margin: 4px 10px 6px;
+      padding: 0;
+  }
+  .floppy__icon_first {
+      min-width: 28px;
+      height: 28px;
   }
 
-  .card__top {
-    margin: 4px 10px 6px;
-    padding: 0;
-  }
-  .footer {
-    padding-top: 50px;
-  }
 }

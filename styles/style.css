@@ -147,7 +147,7 @@
 }
 
 .card__top {
-  font-family: "Inter", "sans-serif";
+  font-family: var(--font-main), "Arial", sans-serif;
   font-style: normal;
   font-weight: var(--title-weight);
   font-size: 18px;
@@ -177,7 +177,7 @@
 }
 
 .card__text {
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: var(--font-main), "Arial", sans-serif;
   font-style: normal;
   font-weight: var(--text-weight);
   font-size: 18px;
@@ -196,7 +196,7 @@
 .button__text {
   position: relative;
   width: 56px;
-  height: 13px;
+  max-height: 13px;
   font-family: var(--font-head), "Arial", sans-serif;
   font-style: normal;
   font-weight: var(--text-weight);
